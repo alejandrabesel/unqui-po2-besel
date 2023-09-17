@@ -16,8 +16,9 @@ public class SupermercadoTest {
 		arroz = new Producto("Arroz", 18.9d, true);
 		detergente = new Producto("Detergente", 75d);
 		supermercado = new Supermercado("Lo de Tito", "Av Zubeldia 801");
-		
 	}
+	Double precioTotalVacio = 0.0;
+	Double precioTotalConProductos = 93.9;
 	
 	@Test
 	public void testCantidadDeProductos() {
@@ -29,7 +30,7 @@ public class SupermercadoTest {
 	
 	@Test
 	public void testPrecioTotal() {
-		assertEquals(new Double(0), supermercado.getPrecioTotal());
+		assertEquals(new Double(0.0), supermercado.getPrecioTotal());
 		supermercado.agregarProducto(arroz);
 		supermercado.agregarProducto(detergente);
 		assertEquals(new Double(93.9), supermercado.getPrecioTotal());
