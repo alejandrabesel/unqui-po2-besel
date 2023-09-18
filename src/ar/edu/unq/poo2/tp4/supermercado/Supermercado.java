@@ -5,7 +5,7 @@ public class Supermercado {
 	
 	String nombre;
 	String direccion;
-	ArrayList<Producto> arrayProductos = new ArrayList<>();
+	ArrayList<Producto> listaDeProductos = new ArrayList<>();
 	
 	
 	public Supermercado(String nombreSupermercado, String direccionSupermercado) {
@@ -14,16 +14,16 @@ public class Supermercado {
 	}
 	
 	public int getCantidadDeProductos() {
-		return arrayProductos.size();
+		return listaDeProductos.size();
 	}
 	
 	public void agregarProducto(Producto productoAAgregar) {
-		arrayProductos.add(productoAAgregar);
+		listaDeProductos.add(productoAAgregar);
 	}
 	
 	public Double getPrecioTotal() {
 		Double total = 0.0;
-	        for (Producto elemento : arrayProductos) {
+	        for (Producto elemento : listaDeProductos) {
 	            total += elemento.precio;
 	        }
         return total;

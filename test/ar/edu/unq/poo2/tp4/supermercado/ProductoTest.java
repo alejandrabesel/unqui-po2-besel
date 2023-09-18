@@ -20,11 +20,11 @@ public class ProductoTest {
 	public void testConstructor() {
 		assertEquals("Arroz", arroz.getNombre());
 		assertEquals(new Double(18.9), arroz.getPrecio());
-		assertTrue(arroz.esPrecioCuidado());
+		assertTrue(arroz.getEsPrecioCuidado());
 		
 		assertEquals("Vino", vino.getNombre());
 		assertEquals(new Double(55), vino.getPrecio());
-		assertFalse(vino.esPrecioCuidado());
+		assertFalse(vino.getEsPrecioCuidado());
 	}
 	
 	@Test

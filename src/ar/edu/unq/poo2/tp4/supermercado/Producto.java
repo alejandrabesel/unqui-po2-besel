@@ -29,11 +29,11 @@ public class Producto {
 		return precio;
 	}
 	
-	public boolean esPrecioCuidado() {
+	public boolean getEsPrecioCuidado() {
 		return esPrecioCuidado;
 	}
 	
-	public void esPrecioCuidado(boolean esCuidado) {
+	public void setEsPrecioCuidado(boolean esCuidado) {
 		esPrecioCuidado = esCuidado;
 	}
 	
